@@ -11,7 +11,7 @@
     <h2>JDBC 드라이버 테스트23411</h2>
 
     <%
-        String jdbcUrl = "jdbc:mysql://localhost:3306/myshop";
+        String jdbcUrl = "jdbc:mysql://10.26.143.117:3308/myshop";
         String dbId = "root";
         String dbPass = "1234";  
         Connection conn=null;
