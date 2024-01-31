@@ -145,9 +145,7 @@ nav {
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 14px;
-  
     float:right;
-  
   }
   
   
@@ -194,65 +192,12 @@ nav {
 
 #mainpic img{
     width: 100%;
-    border-bottom: 3px solid;
-}
-
-#picmain{
-    width: 1300px;
-    height: 600px;
-    /* background-color: blueviolet */
-    
-}
-
-
-#pic h2{
-    padding-left: 20px;
-}
-
-#pic img{
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 400px;
-    border: 2px solid;
-}
-
-#pic2 img{
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 400px;
-    border: 2px solid;
-}
-
-#pic3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.discount-info, .images-container, .discount-texts {
-    margin-bottom: 20px;
-}
-
-.images-container img {
-    margin-left: 20px;
-    margin-top: 30px;
-    border: 2px solid;
-    width: 400px;
-    height: 400px;
-}
-
-.discount-texts {
+    margin-top: 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-.discount-text {
-    margin: 0 100px; /* 여백 조절 */
-    text-align: center;
-    font-size: 30px;
-    color: red;
-}
-
 
 
 

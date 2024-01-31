@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>종합 판매 사이트</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Electronic.css'>
     <script src='main.js'></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
         <ul id="topMenu">
             <li><a href="#">판매목록 1</a>
                 <ul id="subMenu">
-                    <li><a href="Electronic.jsp" aria-label="subemnu">서브목록 1</a></li>
+                    <li><a href="#" aria-label="subemnu">서브목록 1</a></li>
                     <li><a href="#" aria-label="subemnu">서브목록 2</a></li>
                     <li><a href="#" aria-label="subemnu">서브목록 3</a></li>
                     <li><a href="#" aria-label="subemnu">서브목록 4</a></li>
@@ -67,52 +67,24 @@
 
 </header>
 
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
 <div id = "content">
-    <div id="mainpic">
-        <img src="main2.jpg">
-    </div>
-    <br>
-    <br>
-    
-    <div id="pic">
-        <h2>오늘의 인기 상품</h2>
-        <a href="Electronic.jsp">
-        <img src="iphone.jpg">
-        <img src="S23.jpg">
-        <img src="iphone15.jpg">
-        </a>
-    </div>
-    <div id="pic2">
-        <img src="notebook.png">
-        <img src="notebook1.jpg">
-        <img src="notebook2.jpg">
-    </div>
-    <br>
-    <br>
-    <br>
-    <div id = "picmain">
-        <div id="pic3">
-            <div class="discount-info">
-                <h2>오늘의 특별 할인</h2>
-            </div>
-        
-            <div class="images-container">
-                <img src="s1.jpg">
-                <img src="computer.jpg">
-            </div>
-        
-            <div class="discount-texts">
-                <div class="discount-text">
-                    <p style="color: red; text-align: center;">현재 70% 할인 중!</p>
-                </div>
-                <div class="discount-text">
-                    <p style="color: red; text-align: center;">현재 80% 할인 중!</p>
-                </div>
-            </div>
-        </div>
+<div id="mainpic">
+
+    <img src="electronic1.jpg">
+
+    <img src="electronic2.jpg">
+
+    <img src="electronic3.jpg">
+</div>
+<br>
+<h1>테스트</h1>
+<br>
+
 </div>
 
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
 <footer>  <!-- 하단 메뉴 -->
     <section id="bottomMenu">
