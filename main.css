@@ -156,6 +156,7 @@ nav {
     list-style-type: none;
     list-style: none;
     padding-right: 60px;
+    padding-bottom: 50px;
   }
   
   #login > li {
@@ -184,10 +185,50 @@ nav {
 
 #content {
     width: 1300px;
-    height: 1300px;
+    height: 1900px;
     background-color: rgb(152, 253, 228);
 }
 
+#mainpic img{
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+#pic h4{
+    padding-left: 20px;
+}
+
+#pic img{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 400px;
+    border: 2px solid;
+}
+
+#pic2 img{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 400px;
+    border: 2px solid;
+}
+
+#pic3 h2{
+    padding-left: 30px;
+    font-size: 40px;
+}
+
+#pic3 img{
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 2px solid;
+    width: 400px;
+    height: 400px;
+}
+
+#pic3 p{
+    margin-left: 30px;
+    font-size: 30px;
+}
 
 /******************
 /*   푸터 영역    */

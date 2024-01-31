@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 <header>  <!-- 제목과 로고를 넣는곳 -->
 
     <div id="logo">
@@ -61,14 +62,39 @@
         <li><a href="#">로그인</a></li>   <!--새로 만들어서 구현해야함-->
         <li><a href="login.jsp" target="_blank">회원가입</a></li>  <!--login.jsp 및 login.css-->
         <div id="search">
-            <input type="text" placeholder="광고"> 
+            <input type="text" placeholder="검색"> 
     </div>
 
 </header>
 
 
 <div id = "content">
-    <h1>본문 내용 작성</h1>
+    <div id="mainpic">
+        <img src="main2.jpg">
+    </div>
+    <br>
+    <br>
+    <div id="pic">
+        <h4>오늘의 할인 상품</h4>
+        <img src="iphone.jpg">
+        <img src="S23.jpg">
+        <img src="iphone15.jpg">
+    </div>
+    <div id="pic2">
+        <img src="notebook.png">
+        <img src="notebook1.jpg">
+        <img src="notebook2.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="pic3">
+        <h2>오늘의 특별 할인</h2>
+        <img src="s1.jpg">
+        <p style="color: red;">현재 80% 할인 중!</p>
+        <p style="font-size: medium;">569,000원</p>
+        <img src="computer.jpg">
+    </div>
 </div>
 
 
