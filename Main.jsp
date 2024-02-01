@@ -61,7 +61,7 @@
     </nav>
 
     <div id="login">
-        <li><a href="#">로그인</a></li>   <!--새로 만들어서 구현해야함-->
+        <li><a href="R_login.jsp" target="_blank">로그인</a></li>   <!--새로 만들어서 구현해야함-->
         <li><a href="login.jsp" target="_blank">회원가입</a></li>  <!--login.jsp 및 login.css-->
         <div id="search">
             <input type="text" placeholder="검색"> 
