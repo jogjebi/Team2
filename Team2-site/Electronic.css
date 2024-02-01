@@ -1,0 +1,251 @@
+* {
+    margin: 0 auto;
+    /* 마진 리셋 */
+    padding: 0;
+    /* 패딩 리셋 */
+    box-sizing: border-box;
+    /* 박스 영역은 테두리까지 */
+    
+}
+
+a {
+    text-decoration: none;
+    /* 텍스트 링크 밑줄 없애기 */
+}
+
+ul {
+    list-style: none;
+}
+
+/******************
+/*   헤더 영역    */
+/******************/
+
+header {
+    padding-top: 10px;
+    width: 1300px;
+    height: 150px;
+    background-color: rgb(247, 248, 173);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* 요소 사이의 여백을 최대화하여 좌우 정렬 */
+    align-items: center; /* 수직 방향에서 중앙 정렬 */
+    border: 1px solid;
+    
+}
+
+
+header h1{
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 33px;
+}
+
+#logo img{
+    width: 130px;
+    height: 130px;
+}
+
+nav {
+    margin-left: 30px;
+    float: left;
+    /* 오른쪽으로 플로팅 */
+    width: 900px;
+    /*   너비 */
+    height: 100px;
+    /* 메뉴 영역 높이 */
+    padding-top: 20px;
+    /* 메뉴를 아래로 내리기 위해 */
+
+    justify-content: flex-end;
+
+}
+
+/*topMenu*/
+
+#topMenu {
+    height: 30px;
+}
+
+#topMenu>li {
+    width: 200px;
+    float: left;
+    /* 메뉴 항목을 왼쪽으로 플로팅 */
+    position: relative;
+}
+
+#topMenu>li>a {
+    display: block;
+    /* 링크 텍스트는 블록으로 */
+    font-size: 1.1em;
+    color: #000000;
+    /* 글자 색 */
+    font-weight: 600;
+    /* 글자 굵기 */
+    padding: 20px 50px;
+    /* 패딩 */
+}
+
+#topMenu>li>a:hover {  /* 마우스 커서 갖다대면 */
+    color: #2107527a;
+    text-shadow: 0 -1px #000000;
+}
+
+/*서브메뉴*/
+
+#subMenu {
+    position: absolute;
+    background-color:  rgba(247, 248, 173, 0.726);
+    opacity: 0;  /* opacity: 0; */
+    visibility: hidden;  /* visibility: hidden;: 초기에 서브메뉴를 보이지 않도록 설정 */
+    transition: all 0.15s ease-in;  /* transition: all 0.15s ease-in;: 서브메뉴 천천히 나오게 설정한 트랜지션 */
+
+}
+
+#subMenu>li {
+    padding: 20px 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+#subMenu>li>a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#topMenu>li:hover #subMenu {
+    opacity: 3;  /* 투명도 1로 설정 */
+    visibility: visible;  /* hidden과 다르게 화면에 표시 */
+}
+
+#subMenu>li>a:hover {
+    text-decoration: underline;
+}
+/*서브 끝*/
+
+
+/* 로그인 및 회원가입 */
+
+#search{
+    margin:0 auto;
+    padding-top:30px;
+    font-size: 14px;
+    color: #808080;
+  }
+  
+  .search {
+    position: absolute;
+    width: 300px;
+  }
+  
+  input {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    float:right;
+  }
+  
+  
+  /*로그인*/
+  
+  #login{
+    list-style-type: none;
+    list-style: none;
+    padding-right: 60px;
+    padding-bottom: 50px;
+  }
+  
+  #login > li {
+    float:left;
+    position: relative;  
+  }
+  
+  #login > li > a{
+    font-size:0.5em;
+    color:#000000;  /* 글자 색 */
+    font-weight:10;  /* 글자 굵기 */
+    padding:20px 20px;
+  }
+  
+  #search{
+    padding-bottom: 40px;
+  }
+
+
+/* 로그인 및 회원가입 끝 */
+
+
+/******************
+/*   본문 영역    */
+/******************/
+
+#content {
+    width: 1300px;
+    height: 1900px;
+    /* background-color: rgb(152, 253, 228); */
+    border: 1px solid;
+}
+
+#mainpic{
+    margin-top: 10px; 
+}
+
+#mainpic img{
+    width: 100%;
+    margin-top: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/******************
+/*   푸터 영역    */
+/******************/
+
+footer {
+    margin-bottom: 20px;
+    width: 1300px;
+    /* 너비 */
+    height: 70px;
+    /* 높이 */
+    border-top: 2px solid #000000;
+    background-color: rgb(247, 248, 173);
+    border: 1px solid;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    margin-left: 60px;
+}
+
+#bottomMenu ul {
+    margin-top: 15px;
+}
+
+#bottomMenu ul li {
+    float: left;
+    /* 가로로 배치 */
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+    /* 항목 오른쪽에 테두리 */
+}
+
+#bottomMenu ul li:last-child {
+    border: none;
+    /* 마지막 항목에는 오른쪽 테두리 없음 */
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+    font-size: 15px;
+    /* 글자 크기 */
+    color: #666;
+    /* 글자 색 */
+}
