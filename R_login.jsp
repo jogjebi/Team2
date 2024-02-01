@@ -17,8 +17,8 @@
           <input id="userid" name="userid" type="text" required autofocus>
         </li>
         <li>
-          <label for="pwd">비밀번호</label>
-          <input id="pwd" name="password" type="password" required>
+          <label for="pwd1">비밀번호</label>
+          <input id="pwd1" name="pwd1" type="password" required>
         </li>
       </ul>
     </fieldset>
