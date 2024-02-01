@@ -72,7 +72,7 @@
 
 <div id = "content">
     <div id="mainpic">
-        <img src="main2.jpg">
+        <img id="mainImage" src="main1.jpg">
     </div>
     <br>
     <br>
@@ -125,6 +125,49 @@
             </div>
         </div>
 </div>
+
+
+<!--스크립트 부분-->
+
+<script>
+    // mainpic 슬라이드쇼 관련 변수 및 함수
+    var mainpicIndex = 1;
+    showMainpic();
+
+    function showMainpic() {
+        var mainpic = document.getElementById("mainImage");
+
+        // 이미지 변경
+        switch (mainpicIndex) {
+            case 1:
+                mainpic.src = "electronic2.jpg";
+                break;
+            case 2:
+                mainpic.src = "apple1.jpg";
+                break;
+            case 3:
+                mainpic.src = "main3.jpg";
+                break;
+            case 4:
+                mainpic.src = "electronic1.jpg";
+            break;
+            case 5:
+                mainpic.src = "main4.png";
+            break;
+            // 원하는 만큼 계속 추가 가능
+
+            default:
+                mainpicIndex = 1;
+                break;
+        }
+
+        // 다음 이미지로 이동
+        mainpicIndex++;
+
+        // 2초마다 showMainpic 함수 호출
+        setTimeout(showMainpic, 2000);
+    }
+</script>
 
 
 <footer>  <!-- 하단 메뉴 -->
