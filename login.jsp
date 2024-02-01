@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>회원 가입</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="register3.css">
 </head>
 <body>
-  <form id="signup" action="login_result.jsp">
+
+
+
+<form action="login_result.jsp" method="post">
+
     <fieldset>
-      <legend>회원가입 정보</legend>
+      <legend>로그인 정보</legend>
       <ul>
         <li>
           <label for="userid">아이디</label>
@@ -48,6 +52,7 @@
     <fieldset>
       <button type="submit"> 제출 </button> 
     </fieldset>
+
   </form>
 
 </body>
