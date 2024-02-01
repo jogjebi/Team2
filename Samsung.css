@@ -43,8 +43,7 @@ header h1{
 }
 
 #logo img{
-    width: 140px;
-
+    width: 130px;
     height: 130px;
 }
 
@@ -117,7 +116,7 @@ nav {
 }
 
 #topMenu>li:hover #subMenu {
-    opacity: 100%;  /* 투명도 1로 설정 */
+    opacity: 3;  /* 투명도 1로 설정 */
     visibility: visible;  /* hidden과 다르게 화면에 표시 */
 }
 
@@ -146,9 +145,7 @@ nav {
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 14px;
-  
     float:right;
-  
   }
   
   
@@ -187,91 +184,51 @@ nav {
 
 #content {
     width: 1300px;
-    height: 1900px;
-    /* background-color: rgb(152, 253, 228); */
+    height: 2850px;
     border: 1px solid;
 }
 
+/* #mainpic{
+    margin-top: 10px; 
+}
 
 #mainpic img{
     width: 100%;
-    border-bottom: 3px solid;
-}
-
-#picmain{
-    width: 1300px;
-    height: 600px;
-    /* background-color: blueviolet */
-    
-}
-
-
-#pic h2{
-    padding-left: 20px;
-}
-
-#pic img{
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 400px;
-    border: 2px solid;
-}
-
-#pic img:hover {  /* 마우스 커서 갖다대면 */
-    color: #2107527a;
-    text-shadow: 0 -2px #000000;
-    transform: scale(1.1);
-}
-
-#pic2 img:hover {  /* 마우스 커서 갖다대면 */
-    color: #2107527a;
-    text-shadow: 30px #000000;
-    transform: scale(0.9);
-}
-
-#pic img:visited{
-    color: black;
-}
-
-#pic2 img{
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 400px;
-    border: 2px solid;
-}
-
-#pic3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.discount-info, .images-container, .discount-texts {
-    margin-bottom: 20px;
-}
-
-.images-container img {
-    margin-left: 20px;
-    margin-top: 30px;
-    border: 2px solid;
-    width: 400px;
-    height: 400px;
-}
-
-.discount-texts {
+    margin-top: 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+} */
+
+#samsungpic1 img{
+    width: 70%;
+    height: 200px;
+    display: flex;
 }
 
-.discount-text {
-    margin: 0 100px; /* 여백 조절 */
-    text-align: center;
-    font-size: 30px;
-    color: red;
+#samsungpic2 img{
+    width: 100%;
+    height: 700px;
+}
+#samsungpic3 img{
+    width: 100%;
+    height: 700px;
+}
+#samsungpic4 img{
+    width: 100%;
+    height: 700px;
+}
+#samsungpic5 img{
+    display: flex;
+    width: 70%;
+    height: 150px;
 }
 
-
-
+#samsungpic6 img{
+    width: 100%;
+    height: 320px;
+}
 
 /******************
 /*   푸터 영역    */
