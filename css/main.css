@@ -188,7 +188,7 @@ nav {
 #content {
     width: 1300px;
     height: auto;   /* 배너 광고로 인해 화면이 밑으로 내려가는 현상이 있었으나, height을 auto로 바꿔서 자동 조정을 할 수 있도록 함 */
-    background-color: rgb(152, 253, 228);
+    /* background-color: rgb(152, 253, 228); */
     border: 1px solid;
 }
 

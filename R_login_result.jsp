@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>로그인 결과</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
   

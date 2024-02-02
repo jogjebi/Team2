@@ -6,7 +6,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>PANDORA - 비밀의 쇼핑</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='Apple.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/Apple.css'>
         <script src='main.js'></script>
     </head>
     <body>
@@ -16,7 +16,7 @@
 
             <div id="logo">
                 <a href="Main.jsp">
-                    <img src="PANDORA.png" >
+                    <img src="image/PANDORA.png" >
                 </a>
             </div>
         
@@ -61,7 +61,7 @@
             </nav>
         
             <div id="login">
-                <li><a href="#">로그인</a></li>   <!--새로 만들어서 구현해야함-->
+                <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
                 <li><a href="login.jsp">회원가입</a></li>  <!--login.jsp 및 login.css-->
                 <div id="search">
                     <input type="text" placeholder="검색"> 
@@ -75,24 +75,24 @@
 
     <div id="applepic1">
         <a href="https://www.apple.com/kr/" target="_blank">
-            <img src="apple1.jpg">
+            <img src="image/apple1.jpg">
         </a>
     </div>
     <br>
     <div id="applepic2">
         <a href="https://www.apple.com/kr/iphone-15-pro/" target="_blank">
-            <img src="apple2.png">
+            <img src="image/apple2.png">
         </a>
     </div>
     <br>
     <div id="applepic3">
         <a href="https://www.apple.com/kr/macbook-pro/" target="_blank">
-            <img src="apple3.png">
+            <img src="image/apple3.png">
         </a>
     </div>
     <div id="applepic4">
         <a href="https://www.apple.com/kr/shop/buy-iphone" target="_blank">
-            <img src="apple4.jpg">
+            <img src="image/apple4.jpg">
         </a>
         
     </div>

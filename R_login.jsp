@@ -5,14 +5,14 @@
 <head>
   <meta charset="UTF-8">
   <title>PANDORA-로그인</title>
-  <link rel="stylesheet" href="R_login.css">
+  <link rel="stylesheet" href="css/R_login.css">
 </head>
 
 <header>  <!-- 제목과 로고를 넣는곳 -->
 
   <div id="logo">
     <a href="Main.jsp">
-        <img src="PANDORA.png" >
+        <img src="image/PANDORA.png" >
     </a>
   </div>
 

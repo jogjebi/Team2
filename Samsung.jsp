@@ -6,7 +6,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>PANDORA - 비밀의 쇼핑</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='Samsung.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/Samsung.css'>
         <script src='main.js'></script>
     </head>
     <body>
@@ -16,7 +16,7 @@
 
             <div id="logo">
                 <a href="Main.jsp">
-                    <img src="PANDORA.png" >
+                    <img src="image/PANDORA.png" >
                 </a>
             </div>
         
@@ -61,7 +61,7 @@
             </nav>
         
             <div id="login">
-                <li><a href="#">로그인</a></li>   <!--새로 만들어서 구현해야함-->
+                <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
                 <li><a href="login.jsp">회원가입</a></li>  <!--login.jsp 및 login.css-->
                 <div id="search">
                     <input type="text" placeholder="검색"> 
@@ -85,31 +85,31 @@
 </div> -->
 
 <div id="samsungpic1">
-    <img src="samsung1.jpg">
+    <img src="image/samsung1.jpg">
 </div>
 <div id="samsungpic2">
     <a href="https://www.samsung.com/sec/galaxy-s24/launching/?cid=sec_paid_ppc_google_f1h24_ecommerce_searchad_text_f1h24-launching_%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90_pfm&utm_source=google&utm_medium=searchad&utm_campaign=f1h24&utm_term=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90&_AT=000202C801AD037AD390&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ62iz4Dhjf2kKrOG23j4RhPZPi36c6dMhQfVnWwlHvrxEizrndkgbBoCv88QAvD_BwE" target="_blank">
-        <img src="samsung2.jpg">
+        <img src="image/samsung2.jpg">
     </a>
 </div>
 <div id="samsungpic3">
     <a href="https://www.samsung.com/sec/refrigerators/" target="_blank">
-        <img src="samsung3.jpg">
+        <img src="image/samsung3.jpg">
     </a>
 </div>
 <br>
 <div id="samsungpic4">
     <a href="https://www.samsung.com/sec/air-conditioners/all-air-conditioners/" target="_blank">
-        <img src="samsung4.jpg">
+        <img src="image/samsung4.jpg">
     </a>
 </div>
 <br>
 <div id="samsungpic5">
-    <img src="samsung5.jpg">
+    <img src="image/samsung5.jpg">
 </div>
 <div id="samsungpic6">
     <a href="https://www.samsung.com/sec/sustainability/main/">
-        <img src="samsung6.jpg">
+        <img src="image/samsung6.jpg">
     </a>
 </div>
 

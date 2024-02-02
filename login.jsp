@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>회원 가입</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
   <header>  <!-- 제목과 로고를 넣는곳 -->
 
     <div id="logo">
       <a href="Main.jsp">
-          <img src="PANDORA.png" >
+          <img src="image/PANDORA.png" >
       </a>
     </div>
   

@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PANDORA - 비밀의 쇼핑</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='main.js'></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
     <div id="logo">
         <a href="Main.jsp">
-            <img src="PANDORA.png" >
+            <img src="image/PANDORA.png" >
         </a>
     </div>
 
@@ -72,33 +72,33 @@
 
 <div id = "content">
     <div id="mainpic">
-        <img id="mainImage" src="main1.jpg">
+        <img id="mainImage" src="image/main1.jpg">
     </div>
     <br>
     <br>
     
     <div id="pic">
         <h2>오늘의 인기 상품</h2>
-        <a href="Apple.jsp">
-            <img src="iphone.jpg">
+        <a href="image/Apple.jsp">
+            <img src="image/iphone.jpg">
         </a>
         <a href="Samsung.jsp">
-            <img src="S23.jpg">
+            <img src="image/S23.jpg">
         </a>
         <a href="Apple.jsp">
-            <img src="iphone15.jpg">
+            <img src="image/iphone15.jpg">
         </a>
     </div>
     <div id="pic2">
         <a href="https://www.samsung.com/sec/galaxybook/package-galaxy-book4-ultra-nt960xgl-xa72g/NT960XGL-XA72G/">
-            <img src="notebook.png">
+            <img src="image/notebook.png">
         </a>
         <a href="https://rog.asus.com/kr/laptops/rog-strix/rog-strix-g16-2024/">
-            <img src="notebook1.jpg">
+            <img src="image/notebook1.jpg">
         </a>
         
         <a href="https://kr.msi.com/Laptop/GF63-Thin-11UX">
-            <img src="notebook2.jpg">
+            <img src="image/notebook2.jpg">
         </a>
     </div>
     <br>
@@ -111,8 +111,8 @@
             </div>
         
             <div class="images-container">
-                <img src="s1.jpg">
-                <img src="computer.jpg">
+                <img src="image/s1.jpg">
+                <img src="image/computer.jpg">
             </div>
         
             <div class="discount-texts">
@@ -138,19 +138,19 @@
 
         switch (mainpicIndex) {
             case 1:
-                mainpic.src = "electronic2.jpg";
+                mainpic.src = "image/electronic2.jpg";
                 break;
             case 2:
-                mainpic.src = "apple1.jpg";
+                mainpic.src = "image/apple1.jpg";
                 break;
             case 3:
-                mainpic.src = "main3.jpg";
+                mainpic.src = "image/main3.jpg";
                 break;
             case 4:
-                mainpic.src = "electronic1.jpg";
+                mainpic.src = "image/electronic1.jpg";
                 break;
             case 5:
-                mainpic.src = "main4.png";
+                mainpic.src = "image/main4.png";
                 break;
             default:
                 mainpicIndex = 1;

@@ -6,8 +6,8 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>PANDORA - 비밀의 쇼핑</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='notebook.css'>
-        <script src='main.js'></script>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/notebook.css'>
+        <script src='image/main.js'></script>
     </head>
     <body>
     
@@ -16,7 +16,7 @@
 
             <div id="logo">
                 <a href="Main.jsp">
-                    <img src="PANDORA.png" >
+                    <img src="image/PANDORA.png" >
                 </a>
             </div>
         
@@ -61,7 +61,7 @@
             </nav>
         
             <div id="login">
-                <li><a href="#">로그인</a></li>   <!--새로 만들어서 구현해야함-->
+                <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
                 <li><a href="login.jsp" target="_blank">회원가입</a></li>  <!--login.jsp 및 login.css-->
                 <div id="search">
                     <input type="text" placeholder="검색"> 
