@@ -104,12 +104,13 @@
 <footer>  <!-- 하단 메뉴 -->
     <section id="bottomMenu">
         <ul>
-            <li><a href="#">문의</a></li>
-            <li><a href="" target=_blank>회사소개</a></li>
-            <li><a href="" target=_blank>인재채용</a></li>
-            <li><a href="" target=_blank>공지사항</a></li>
-            <li><a href=""  target="_blank">이용약관</a></li>
-            <li>365 고객센터 | 전자금융거래분쟁처리담당 | 1577-7011 (유료)</li>
+            <li><a href="contact.jsp" target="_blank">문의</a></li>
+            <li><a href="company_intro.jsp" target="_blank">회사소개</a></li>
+            <li><a href="career.jsp" target="_blank">인재채용</a></li>
+            <li><a href="notice.jsp" target="_blank">공지사항</a></li>
+            <li><a href="terms.jsp"  target="_blank">이용약관</a></li>
+            <li>저희 PANDORA는 여러 협력업체와 함께 물건을 판매하는 사이트입니다.</li>
+
             <li></li>
         </ul>
     </section>   
