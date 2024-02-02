@@ -32,8 +32,8 @@
                             <li><a href="Samsung.jsp" aria-label="subemnu">SAMSUNG</a></li>
                             <li><a href="Apple.jsp" aria-label="subemnu">APPLE</a></li>
                             <li><a href="https://oversystem.co.kr/" aria-label="subemnu">컴퓨터</a></li>
-                            <li><a href="#" aria-label="subemnu">노트북</a></li>
-                            <li><a href="#" aria-label="subemnu">TV</a></li>
+                            <li><a href="https://www.lenovo.com/kr/ko/d/deals/special-offer/gaming/?orgRef=https%253A%252F%252Fwww.google.com%252F&cid=kr:sem:dbnbt8&gad_source=1&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVn5z85kU4lAwj9-7RPLo-pAmnJyYsOHENK93XV7l1ZhsOCBiToKYW4aAoeoEALw_wcB" aria-label="subemnu">노트북</a></li>
+                            <li><a href="https://www.lge.co.kr/tvs" aria-label="subemnu">TV</a></li>
                         </ul>
                     </li> <!--subMenu-->
         
@@ -64,25 +64,14 @@
                 <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
                 <li><a href="login.jsp">회원가입</a></li>  <!--login.jsp 및 login.css-->
                 <div id="search">
-                    <input type="text" placeholder="검색"> 
-            </div>
+                    <input type="text" id="searchInput" placeholder="검색" onkeypress="handleKeyPress(event)">
+               </div>
         
         </header>
 
 <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
 <div id = "content">
-<!-- <div id="mainpic">
-    <a href="https://www.apple.com/kr/store?afid=p238%7CsiADh6hbK-dc_mtid_18707vxu38484_pcrid_686635245722_pgrid_16348496961_pntwk_g_pchan__pexid__&cid=aos-kr-kwgo-Brand--slid---product-" target="_blank">
-        <img src="electronic1.jpg">
-    </a>
-    <a href="https://www.lge.co.kr/" target="_blank">
-        <img src="electronic2.jpg">
-    </a>
-    <a href="http://xiaomikorea.com/" target="_blank">
-        <img src="electronic3.jpg">
-    </a>
-</div> -->
 
 <div id="samsungpic1">
     <img src="image/samsung1.jpg">
@@ -132,6 +121,28 @@
         </ul>
     </section>   
 </footer>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) {
+            performSearch();
+        }
+    }
+
+    function performSearch() {
+        var searchInput = document.getElementById('searchInput');
+        var searchTerm = searchInput.value.trim().toLowerCase();
+
+        if (searchTerm === "samsung") {
+            window.location.href = 'Samsung.jsp';
+        } else if (searchTerm === "apple") {
+            window.location.href = 'Apple.jsp';
+        } else {
+            alert("검색 결과가 없습니다.");
+        }
+    }
+</script>
+
 
 </body>
 

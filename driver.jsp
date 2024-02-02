@@ -1,35 +1,35 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <%@ page import="java.sql.*"%>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
 
-//ë°ì´í„°ì„¤ì • ì˜ˆìž¬
+//µ¥ÀÌÅÍ¼³Á¤ ¿¹Àç
 
 <html>
 <head>
-    <title>íšŒì›ëª©ë¡</title>
+    <title>È¸¿ø¸ñ·Ï</title>
 </head>
 <body>
-    <h2>JDBC ë“œë¼ì´ë²„ í…ŒìŠ¤íŠ¸23411</h2>
+    <h2>JDBC µå¶óÀÌ¹ö Å×½ºÆ®23411</h2>
 
     <%
         String jdbcUrl = "jdbc:mysql://10.26.143.117:3308/myshop";
         String dbId = "root";
         String dbPass = "root";
         Connection conn=null;
-        // SQL ì¿¼ë¦¬
+        // SQL Äõ¸®
         String sql = "SELECT * FROM loginData";
         
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); // JDBC ë¡œë”©
+            Class.forName("com.mysql.cj.jdbc.Driver"); // JDBC ·Îµù
             conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
-            out.println("ì œëŒ€ë¡œ ì—°ê²°ë˜ì—ˆìŠµë‹ˆë‹¤.");
+            out.println("Á¦´ë·Î ¿¬°áµÇ¾ú½À´Ï´Ù.");
 
-            // PreparedStatement ìƒì„±
+            // PreparedStatement »ý¼º
             PreparedStatement pstmt = conn.prepareStatement(sql);
 
-            // ì¿¼ë¦¬ ì‹¤í–‰ ë° ê²°ê³¼ ê°€ì ¸ì˜¤ê¸°
+            // Äõ¸® ½ÇÇà ¹× °á°ú °¡Á®¿À±â
             ResultSet result = pstmt.executeQuery();
     %>
             <table border="1">
@@ -55,7 +55,7 @@
         } catch (Exception e) { 
             out.println(e);
         } finally {
-            // ë¦¬ì†ŒìŠ¤ í•´ì œ
+            // ¸®¼Ò½º ÇØÁ¦
             if (conn != null) {
                 try {
                     conn.close();

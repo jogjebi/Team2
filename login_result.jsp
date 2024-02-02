@@ -1,39 +1,55 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
-<html>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE HTML>
+<jsp:useBean id="Driver" class="source.Driver"/>
+<%@ page import="java.sql.*" %>
+<form id="R_login_result" action="Main_login.jsp" method="post">
+<html lang="ko">
+
+           <% request.setCharacterEncoding("EUC-KR"); %>
+        <%  
+            String userid = request.getParameter("userid");
+            String pwd1 = request.getParameter("pwd1");
+            String level = request.getParameter("level");
+            String fullname = request.getParameter("fullname");
+            String email = request.getParameter("email");
+            String tel = request.getParameter("tel");
+
+        Connection conn = Driver.jdbc();
+        // SQL ����
+        String sql = "INSERT INTO loginData (id, pw, level, name,email,tel) VALUES (?, ?, ? ,? ,? ,?)";
+
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+
+        pstmt.setString(1, userid);
+        pstmt.setString(2, pwd1);
+        pstmt.setString(3, level);
+        pstmt.setString(4, fullname);
+        pstmt.setString(5, email);
+        pstmt.setString(6, tel);
+
+        // ���� ���� �� ��� ��������
+        pstmt.executeUpdate();
+
+        conn.close();
+  %>
+
+
 <head>
-  <meta charset="UTF-8">
-  <title>회원 가입 성공</title>
-  <link rel="stylesheet" href="css/login_result.css">
+  <meta charset="EUC-KR">
+  <link rel="stylesheet" href="login_result.css">
 </head>
 <body>
-  <header>  <!-- 제목과 로고를 넣는곳 -->
-
-    <div id="logo">
-      <a href="Main.jsp">
-          <img src="image/PANDORA.png" >
-      </a>
-    </div>
-  
-  
-      <h1>PANDORA</h1>
-   
-  </header>
-
-  <form id="success">
-    
-  <h1>ȸ������ ����!</h1>
-  <p>ȸ�����Կ� �����ϼ̽��ϴ�.</p>
   <fieldset>
   <div>
-    <h2>ȸ�� ����</h2>
+    <h2>ȸ�� ����</h2>
     <ul>
-      <li><strong>���̵�:</strong> <%= request.getParameter("userid") %></li>
-      <li><strong>��й�ȣ:</strong> <%= request.getParameter("pwd1") %></li>
-      <li><strong>ȸ�� ���:</strong> <%= request.getParameter("level") %></li>
+      <li><strong>���̵�:</strong> <%= request.getParameter("userid") %></li>
+      <li><strong>��й�ȣ:</strong> <%= request.getParameter("pwd1") %></li>
+      <li><strong>ȸ�� ���:</strong> <%= request.getParameter("level") %></li>
     </ul>
   </div>
-  <button type="button" onclick="Main()">ó������</button>
+  <button type="button" onclick="Main()">ó������</button>
 </fieldset>
 </form>
 
@@ -42,22 +58,6 @@ function Main() {
   window.location.href = "Main.jsp";
 }
 </script>
-</from>
-
-<footer>  <!-- 하단 메뉴 -->
-  <section id="bottomMenu">
-      <ul>
-          <li><a href="contact.jsp" target="_blank">문의</a></li>
-          <li><a href="company_intro.jsp" target="_blank">회사소개</a></li>
-          <li><a href="career.jsp" target="_blank">인재채용</a></li>
-          <li><a href="notice.jsp" target="_blank">공지사항</a></li>
-          <li><a href="terms.jsp"  target="_blank">이용약관</a></li>
-          <li>저희 PANDORA는 여러 협력업체와 함께 물건을 판매하는 사이트입니다.</li>
-
-          <li></li>
-      </ul>
-  </section>   
-</footer>
-
+</form>
 </body>
 </html>

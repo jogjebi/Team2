@@ -1,12 +1,12 @@
-ï»¿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>íšŒì› ê°€ìž…</title>
+  <meta charset="EUC-KR">
+  <title>È¸¿ø °¡ÀÔ</title>
   <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <header>  <!-- ì œëª©ê³¼ ë¡œê³ ë¥¼ ë„£ëŠ”ê³³ -->
+  <header>  <!-- Á¦¸ñ°ú ·Î°í¸¦ ³Ö´Â°÷ -->
 
     <div id="logo">
       <a href="Main.jsp">
@@ -21,58 +21,58 @@
 
   <form id="signup" action="login_result.jsp">
     <fieldset>
-      <legend>ë¡œê·¸ì¸ ì •ë³´</legend>
+      <legend>·Î±×ÀÎ Á¤º¸</legend>
       <ul>
         <li>
-          <label for="userid">ì•„ì´ë””</label>
+          <label for="userid">¾ÆÀÌµð</label>
           <input id="userid" name="userid" type="text" required autofocus>
         </li>
         <li>
-          <label for="pwd1">ë¹„ë°€ë²ˆí˜¸</label>
+          <label for="pwd1">ºñ¹Ð¹øÈ£</label>
           <input id="pwd1" name="pwd1" type="password"  required>
         </li>
         <li>
-          <label for="pwd2">ë¹„ë°€ë²ˆí˜¸ í™•ì¸</label>
+          <label for="pwd2">ºñ¹Ð¹øÈ£ È®ÀÎ</label>
           <input id="pwd2" name="pwd2" type="password" required>
         </li>  
         <li>
-          <label for="level">íšŒì› ë“±ê¸‰</label>
-          <input id="level" name="level" type="text" readonly value="ì¼ë°˜">
+          <label for="level">È¸¿ø µî±Þ</label>
+          <input id="level" name="level" type="text" readonly value="ÀÏ¹Ý">
         </li>
       </ul>
     </fieldset>
     <fieldset>
-      <legend>ê°œì¸ ì •ë³´</legend>
+      <legend>°³ÀÎ Á¤º¸</legend>
       <ul>
         <li>
-          <label for="fullname">ì´ë¦„</label>
-          <input id="fullname" name="fullname" type="text" placeholder="5ìžë¯¸ë§Œ ê³µë°±ì—†ì´" required>
+          <label for="fullname">ÀÌ¸§</label>
+          <input id="fullname" name="fullname" type="text" placeholder="5ÀÚ¹Ì¸¸ °ø¹é¾øÀÌ" required>
         </li>
         <li>
-          <label for="email">ë©”ì¼ ì£¼ì†Œ</label>
+          <label for="email">¸ÞÀÏ ÁÖ¼Ò</label>
           <input id="email" name="email" type="email" placeholder="abcd@domain.com" required autocomplete="off">
         </li>
         <li>
-          <label for="tel">ì—°ë½ì²˜</label>
+          <label for="tel">¿¬¶ôÃ³</label>
           <input id="tel" name="tel" type="tel" autocomplete="off">
         </li>  
       </ul>
     </fieldset>
     <fieldset>
-      <button type="submit"> ì œì¶œ </button> 
+      <button type="submit"> Á¦Ãâ </button> 
     </fieldset>
 
   </form>
 
-  <footer>  <!-- í•˜ë‹¨ ë©”ë‰´ -->
+  <footer>  <!-- ÇÏ´Ü ¸Þ´º -->
     <section id="bottomMenu">
         <ul>
-            <li><a href="contact.jsp" target="_blank">ë¬¸ì˜</a></li>
-            <li><a href="company_intro.jsp" target="_blank">íšŒì‚¬ì†Œê°œ</a></li>
-            <li><a href="career.jsp" target="_blank">ì¸ìž¬ì±„ìš©</a></li>
-            <li><a href="notice.jsp" target="_blank">ê³µì§€ì‚¬í•­</a></li>
-            <li><a href="terms.jsp"  target="_blank">ì´ìš©ì•½ê´€</a></li>
-            <li>ì €í¬ PANDORAëŠ” ì—¬ëŸ¬ í˜‘ë ¥ì—…ì²´ì™€ í•¨ê»˜ ë¬¼ê±´ì„ íŒë§¤í•˜ëŠ” ì‚¬ì´íŠ¸ìž…ë‹ˆë‹¤.</li>
+            <li><a href="contact.jsp" target="_blank">¹®ÀÇ</a></li>
+            <li><a href="company_intro.jsp" target="_blank">È¸»ç¼Ò°³</a></li>
+            <li><a href="career.jsp" target="_blank">ÀÎÀçÃ¤¿ë</a></li>
+            <li><a href="notice.jsp" target="_blank">°øÁö»çÇ×</a></li>
+            <li><a href="terms.jsp"  target="_blank">ÀÌ¿ë¾à°ü</a></li>
+            <li>ÀúÈñ PANDORA´Â ¿©·¯ Çù·Â¾÷Ã¼¿Í ÇÔ²² ¹°°ÇÀ» ÆÇ¸ÅÇÏ´Â »çÀÌÆ®ÀÔ´Ï´Ù.</li>
 
             <li></li>
         </ul>
