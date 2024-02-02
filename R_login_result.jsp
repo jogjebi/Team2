@@ -59,10 +59,10 @@
 <jsp:useBean id="Driver" class="source.Driver"/>
 <%@ page import="java.sql.*" %>
 <head>
-  <meta charset='EUC-KR'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>  
-  <title>로그인 결과</title>
-  <link rel="stylesheet" href="login.css">
+    <meta charset='EUC-KR'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>  
+    <title>로그인 결과</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
   <form>
