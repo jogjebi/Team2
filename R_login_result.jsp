@@ -6,9 +6,21 @@
     <meta charset='EUC-KR'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>  
     <title>로그인 결과</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/R_login_result.css">
 </head>
 <body>
+
+    <header>  <!-- 제목과 로고를 넣는곳 -->
+
+        <div id="logo">
+          <a href="Main.jsp">
+              <img src="image/PANDORA.png" >
+          </a>
+        </div>
+          <h1>PANDORA</h1>
+       
+      </header>
+
   <form>
 <%
     request.setCharacterEncoding("EUC-KR");
@@ -42,11 +54,19 @@
     }
 %>
 
+<div id="loginfailed">
+
+
+
+
 <% if (!errorMessage.isEmpty()) { %>
     <h1>로그인 실패</h1>
     <p><%= errorMessage %></p>
+    <br>
     <button type="button" onclick="goToMain()">처음으로</button>
 <% } %>
+
+</div>
 
 <script>
     function goToMain() {
@@ -54,5 +74,21 @@
     }
 </script>
   </form>
+
+  <footer>  <!-- 하단 메뉴 -->
+    <section id="bottomMenu">
+        <ul>
+            <li><a href="contact.jsp" target="_blank">문의</a></li>
+            <li><a href="company_intro.jsp" target="_blank">회사소개</a></li>
+            <li><a href="career.jsp" target="_blank">인재채용</a></li>
+            <li><a href="notice.jsp" target="_blank">공지사항</a></li>
+            <li><a href="terms.jsp"  target="_blank">이용약관</a></li>
+            <li>저희 PANDORA는 여러 협력업체와 함께 물건을 판매하는 사이트입니다.</li>
+
+            <li></li>
+        </ul>
+    </section>   
+</footer>
+
 </body>
 </html> 

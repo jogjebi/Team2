@@ -67,11 +67,13 @@
     </nav>
 
     <div id="login">
-        <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
-        <li><a href="login.jsp">회원가입</a></li>  <!--login.jsp 및 login.css-->
+        <li><%= (String)session.getAttribute("userid") %>님 환영합니다.</li>
+        <!-- 새로 만들어서 구현해야함 -->
         <div id="search">
             <input type="text" id="searchInput" placeholder="검색" onkeypress="handleKeyPress(event)">
-       </div>
+        </div>
+        <li><a href="myprofile.jsp">내 정보</a></li>
+    </div>
 
 </header>
 

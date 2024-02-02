@@ -75,8 +75,7 @@ header h1{
 }
 			
 #R_login button {	
-	border: 1px solid #222;
-	border-radius: 20px;
+
 	display: block;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -84,6 +83,11 @@ header h1{
 	padding: 7px 25px;
 }
 
+
+#in .button:hover {  /* #singup 하위에 있는 버튼에 마우스 올렸을 때 스타일 */
+    background-color:#222;  /* 배경색 - 검정 계열색 */
+    color:#fff;  /* 글자색 - 흰색 */
+  }
 
 /* 푸터 영역 */
 

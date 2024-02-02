@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
   <meta charset="EUC-KR">
-  <title>회원 가입</title>
+  <title>회원가입</title>
   <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
 
   <form id="signup" action="login_result.jsp">
     <fieldset>
-      <legend>로그인 정보</legend>
+      <legend>회원 정보</legend>
       <ul>
         <li>
           <label for="userid">아이디</label>
