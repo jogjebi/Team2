@@ -32,7 +32,7 @@
                     <li><a href="Samsung.jsp" aria-label="subemnu">SAMSUNG</a></li>
                     <li><a href="Apple.jsp" aria-label="subemnu">APPLE</a></li>
                     <li><a href="https://oversystem.co.kr/" aria-label="subemnu">컴퓨터</a></li>
-                    <li><a href="#" aria-label="subemnu">노트북</a></li>
+                    <li><a href="notebook.jsp" aria-label="subemnu">노트북</a></li>
                     <li><a href="#" aria-label="subemnu">TV</a></li>
                 </ul>
             </li> <!--subMenu-->
@@ -61,8 +61,8 @@
     </nav>
 
     <div id="login">
-        <li><a href="R_login.jsp" target="_blank">로그인</a></li>   <!--새로 만들어서 구현해야함-->
-        <li><a href="login.jsp" target="_blank">회원가입</a></li>  <!--login.jsp 및 login.css-->
+        <li><a href="R_login.jsp">로그인</a></li>   <!--새로 만들어서 구현해야함-->
+        <li><a href="login.jsp">회원가입</a></li>  <!--login.jsp 및 login.css-->
         <div id="search">
             <input type="text" placeholder="검색"> 
     </div>
@@ -130,14 +130,12 @@
 <!--스크립트 부분-->
 
 <script>
-    // mainpic 슬라이드쇼 관련 변수 및 함수
     var mainpicIndex = 1;
     showMainpic();
 
     function showMainpic() {
         var mainpic = document.getElementById("mainImage");
 
-        // 이미지 변경
         switch (mainpicIndex) {
             case 1:
                 mainpic.src = "electronic2.jpg";
@@ -150,22 +148,21 @@
                 break;
             case 4:
                 mainpic.src = "electronic1.jpg";
-            break;
+                break;
             case 5:
                 mainpic.src = "main4.png";
-            break;
-            // 원하는 만큼 계속 추가 가능
-
+                break;
             default:
                 mainpicIndex = 1;
                 break;
         }
 
-        // 다음 이미지로 이동
         mainpicIndex++;
 
-        // 2초마다 showMainpic 함수 호출
-        setTimeout(showMainpic, 2000);
+        // 더 부드러운 애니메이션을 위해 requestAnimationFrame 사용
+        requestAnimationFrame(function() {
+            setTimeout(showMainpic, 2000);
+        });
     }
 </script>
 

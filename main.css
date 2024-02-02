@@ -9,9 +9,9 @@
 }
 
 a {
-    text-decoration: none;
-    /* 텍스트 링크 밑줄 없애기 */
-}
+    text-decoration: none; /* 밑줄 제거 */
+    outline: none; /* 포커스 시 파란색 테두리 제거 */
+  }
 
 ul {
     list-style: none;
@@ -187,8 +187,8 @@ nav {
 
 #content {
     width: 1300px;
-    height: 1900px;
-    /* background-color: rgb(152, 253, 228); */
+    height: auto;   /* 배너 광고로 인해 화면이 밑으로 내려가는 현상이 있었으나, height을 auto로 바꿔서 자동 조정을 할 수 있도록 함 */
+    background-color: rgb(152, 253, 228);
     border: 1px solid;
 }
 
@@ -214,30 +214,27 @@ nav {
     margin-top: 30px;
     margin-left: 10px;
     width: 400px;
-    border: 2px solid;
+    border: 2px solid black;
+
 }
 
 #pic img:hover {  /* 마우스 커서 갖다대면 */
-    color: #2107527a;
     text-shadow: 0 -2px #000000;
     transform: scale(1.1);
 }
 
 #pic2 img:hover {  /* 마우스 커서 갖다대면 */
-    color: #2107527a;
     text-shadow: 30px #000000;
     transform: scale(0.9);
 }
 
-#pic img:visited{
-    color: black;
-}
+
 
 #pic2 img{
     margin-top: 30px;
     margin-left: 10px;
     width: 400px;
-    border: 2px solid;
+    border: 2px solid black;
 }
 
 #pic3 {
@@ -278,10 +275,10 @@ nav {
 /******************/
 
 footer {
-    margin-bottom: 20px;
+
     width: 1300px;
     /* 너비 */
-    height: 70px;
+    height: 90px;
     /* 높이 */
     border-top: 2px solid #000000;
     background-color: rgb(247, 248, 173);
@@ -299,6 +296,7 @@ footer {
 }
 
 #bottomMenu ul li {
+    margin-top: 10px;
     float: left;
     /* 가로로 배치 */
     padding: 5px 20px;

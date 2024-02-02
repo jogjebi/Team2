@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
+  
   <% 
     // 로그인 처리를 위한 Java 코드를 여기에 작성합니다.
     String userid = request.getParameter("userid");
