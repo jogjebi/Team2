@@ -4,7 +4,7 @@
     <head>
         <meta charset='EUC-KR'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>PANDORA - ë¹„ë°€ì˜ ì‡¼í•‘</title>
+        <title>PANDORA - ºñ¹ÐÀÇ ¼îÇÎ</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='css/notebook.css'>
         <script src='image/main.js'></script>
@@ -12,7 +12,7 @@
     <body>
     
     
-        <header>  <!-- ì œëª©ê³¼ ë¡œê³ ë¥¼ ë„£ëŠ”ê³³ -->
+        <header>  <!-- Á¦¸ñ°ú ·Î°í¸¦ ³Ö´Â°÷ -->
 
             <div id="logo">
                 <a href="Main.jsp">
@@ -27,32 +27,32 @@
         
             <nav>
                 <ul id="topMenu">
-                    <li><a href="#">ê°€ì „ ë””ì§€í„¸</a>
+                    <li><a href="#">°¡Àü µðÁöÅÐ</a>
                         <ul id="subMenu">
                             <li><a href="Samsung.jsp" aria-label="subemnu">SAMSUNG</a></li>
                             <li><a href="Apple.jsp" aria-label="subemnu">APPLE</a></li>
-                            <li><a href="https://oversystem.co.kr/" aria-label="subemnu">ì»´í“¨í„°</a></li>
-                            <li><a href="#" aria-label="subemnu">ë…¸íŠ¸ë¶</a></li>
+                            <li><a href="https://oversystem.co.kr/" aria-label="subemnu">ÄÄÇ»ÅÍ</a></li>
+                            <li><a href="#" aria-label="subemnu">³ëÆ®ºÏ</a></li>
                             <li><a href="#" aria-label="subemnu">TV</a></li>
                         </ul>
                     </li> <!--subMenu-->
         
-                    <li><a href="#">ì‹í’ˆ</a>
+                    <li><a href="#">½ÄÇ°</a>
                         <ul id="subMenu">
-                            <li><a href="https://www.fruitn.co.kr/" aria-label="subemnu">ê³¼ì¼</a></li>
-                            <li><a href="https://dmfood.kr/main/index" aria-label="subemnu">ëƒ‰ë™ì‹í’ˆ</a></li>
-                            <li><a href="https://shop.pulmuone.co.kr/shop/goodsList?itemId=4948" aria-label="subemnu">ì±„ì†Œ</a></li>
-                            <li><a href="https://www.jpdc.co.kr/samdasoo/index.htm?gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6sZt9TCvdnOk8cKPm0H1hDB9ui8ojOBbn7ZEpnR3yBsFQtQeRsrzxoCyGoQAvD_BwE" aria-label="subemnu">ìƒìˆ˜/ìŒë£Œ</a></li>
+                            <li><a href="https://www.fruitn.co.kr/" aria-label="subemnu">°úÀÏ</a></li>
+                            <li><a href="https://dmfood.kr/main/index" aria-label="subemnu">³Ãµ¿½ÄÇ°</a></li>
+                            <li><a href="https://shop.pulmuone.co.kr/shop/goodsList?itemId=4948" aria-label="subemnu">Ã¤¼Ò</a></li>
+                            <li><a href="https://www.jpdc.co.kr/samdasoo/index.htm?gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6sZt9TCvdnOk8cKPm0H1hDB9ui8ojOBbn7ZEpnR3yBsFQtQeRsrzxoCyGoQAvD_BwE" aria-label="subemnu">»ý¼ö/À½·á</a></li>
                         </ul>
                     </li> <!--subMenu-->
         
-                    <li><a href="#">ìƒí™œìš©í’ˆ</a>
+                    <li><a href="#">»ýÈ°¿ëÇ°</a>
                         <ul id="subMenu">
-                            <li><a href="https://www.bodyfriend.co.kr/bodyfriend/list?item=medical" aria-label="subemnu">ì•ˆë§ˆì˜ìž</a></li>
-                            <li><a href="https://www.ikea.com/kr/ko/" aria-label="subemnu">í™ˆì¸í…Œë¦¬ì–´</a></li>
-                            <li><a href="https://pethroom.com/product/list.html?cate_no=111&cafe_mkt=ue_google_pfmax&utm_source=google_pfmax&utm_medium=perfomance&utm_campaign=sales&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZyq7ndWRVaQz_pXop-QuylgbxwpPaUAtPNDEdV2khU2irWfmegijHhoC8y0QAvD_BwE" aria-label="subemnu">ë°˜ë ¤ë™ë¬¼</a></li>
-                            <li><a href="https://www.musinsa.com/app/?utm_source=google_shopping&utm_medium=sh&source=GOSHSAP001&utm_source=google_shopping&utm_medium=sh&source=GOSHSAP001&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6x3TgiTdfCb1d1IjAKTkpY63rbRABEj5jYu-m8DuFsMLg5pZwXdVhoC9_AQAvD_BwE" aria-label="subemnu">íŒ¨ì…˜</a></li>
-                            <li><a href="https://www.toyplus.co.kr/" aria-label="subemnu">ì™„êµ¬</a></li>
+                            <li><a href="https://www.bodyfriend.co.kr/bodyfriend/list?item=medical" aria-label="subemnu">¾È¸¶ÀÇÀÚ</a></li>
+                            <li><a href="https://www.ikea.com/kr/ko/" aria-label="subemnu">È¨ÀÎÅ×¸®¾î</a></li>
+                            <li><a href="https://pethroom.com/product/list.html?cate_no=111&cafe_mkt=ue_google_pfmax&utm_source=google_pfmax&utm_medium=perfomance&utm_campaign=sales&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZyq7ndWRVaQz_pXop-QuylgbxwpPaUAtPNDEdV2khU2irWfmegijHhoC8y0QAvD_BwE" aria-label="subemnu">¹Ý·Áµ¿¹°</a></li>
+                            <li><a href="https://www.musinsa.com/app/?utm_source=google_shopping&utm_medium=sh&source=GOSHSAP001&utm_source=google_shopping&utm_medium=sh&source=GOSHSAP001&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6x3TgiTdfCb1d1IjAKTkpY63rbRABEj5jYu-m8DuFsMLg5pZwXdVhoC9_AQAvD_BwE" aria-label="subemnu">ÆÐ¼Ç</a></li>
+                            <li><a href="https://www.toyplus.co.kr/" aria-label="subemnu">¿Ï±¸</a></li>
                         </ul>
                     </li> <!--subMenu-->
                     
@@ -61,10 +61,10 @@
             </nav>
         
             <div id="login">
-                <li><a href="R_login.jsp">ë¡œê·¸ì¸</a></li>   <!--ìƒˆë¡œ ë§Œë“¤ì–´ì„œ êµ¬í˜„í•´ì•¼í•¨-->
-                <li><a href="login.jsp" target="_blank">íšŒì›ê°€ìž…</a></li>  <!--login.jsp ë° login.css-->
+                <li><a href="R_login.jsp">·Î±×ÀÎ</a></li>   <!--»õ·Î ¸¸µé¾î¼­ ±¸ÇöÇØ¾ßÇÔ-->
+                <li><a href="login.jsp" target="_blank">È¸¿ø°¡ÀÔ</a></li>  <!--login.jsp ¹× login.css-->
                 <div id="search">
-                    <input type="text" placeholder="ê²€ìƒ‰"> 
+                    <input type="text" placeholder="°Ë»ö"> 
             </div>
         
         </header>
@@ -73,20 +73,20 @@
 
 <div id = "content">
 
-<!--ì‡¼íŒ¡ëª° ìƒí’ˆ ë“±ë¡ìœ¼ë¡œ ê¾¸ë°€ ì˜ˆì •-->
+<!--¼îÆÎ¸ô »óÇ° µî·ÏÀ¸·Î ²Ù¹Ð ¿¹Á¤-->
 
 </div>
 
 <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<footer>  <!-- í•˜ë‹¨ ë©”ë‰´ -->
+<footer>  <!-- ÇÏ´Ü ¸Þ´º -->
     <section id="bottomMenu">
         <ul>
-            <li><a href="contact.jsp" target="_blank">ë¬¸ì˜</a></li>
-            <li><a href="company_intro.jsp" target="_blank">íšŒì‚¬ì†Œê°œ</a></li>
-            <li><a href="career.jsp" target="_blank">ì¸ìž¬ì±„ìš©</a></li>
-            <li><a href="notice.jsp" target="_blank">ê³µì§€ì‚¬í•­</a></li>
-            <li><a href="terms.jsp"  target="_blank">ì´ìš©ì•½ê´€</a></li>
-            <li>ì €í¬ PANDORAëŠ” ì—¬ëŸ¬ í˜‘ë ¥ì—…ì²´ì™€ í•¨ê»˜ ë¬¼ê±´ì„ íŒë§¤í•˜ëŠ” ì‚¬ì´íŠ¸ìž…ë‹ˆë‹¤.</li>
+            <li><a href="contact.jsp" target="_blank">¹®ÀÇ</a></li>
+            <li><a href="company_intro.jsp" target="_blank">È¸»ç¼Ò°³</a></li>
+            <li><a href="career.jsp" target="_blank">ÀÎÀçÃ¤¿ë</a></li>
+            <li><a href="notice.jsp" target="_blank">°øÁö»çÇ×</a></li>
+            <li><a href="terms.jsp"  target="_blank">ÀÌ¿ë¾à°ü</a></li>
+            <li>ÀúÈñ PANDORA´Â ¿©·¯ Çù·Â¾÷Ã¼¿Í ÇÔ²² ¹°°ÇÀ» ÆÇ¸ÅÇÏ´Â »çÀÌÆ®ÀÔ´Ï´Ù.</li>
 
             <li></li>
         </ul>

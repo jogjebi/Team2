@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <title>회원 가입 성공</title>
@@ -23,18 +22,18 @@
 
   <form id="success">
     
-  <h1>회원가입 성공!</h1>
-  <p>회원가입에 성공하셨습니다.</p>
+  <h1>ȸ������ ����!</h1>
+  <p>ȸ�����Կ� �����ϼ̽��ϴ�.</p>
   <fieldset>
   <div>
-    <h2>회원 정보</h2>
+    <h2>ȸ�� ����</h2>
     <ul>
-      <li><strong>아이디:</strong> <%= request.getParameter("userid") %></li>
-      <li><strong>비밀번호:</strong> <%= request.getParameter("pwd1") %></li>
-      <li><strong>회원 등급:</strong> <%= request.getParameter("level") %></li>
+      <li><strong>���̵�:</strong> <%= request.getParameter("userid") %></li>
+      <li><strong>��й�ȣ:</strong> <%= request.getParameter("pwd1") %></li>
+      <li><strong>ȸ�� ���:</strong> <%= request.getParameter("level") %></li>
     </ul>
   </div>
-  <button type="button" onclick="Main()">처음으로</button>
+  <button type="button" onclick="Main()">ó������</button>
 </fieldset>
 </form>
 

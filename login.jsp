@@ -13,8 +13,6 @@
           <img src="image/PANDORA.png" >
       </a>
     </div>
-  
-  
       <h1>PANDORA</h1>
    
   </header>
@@ -23,7 +21,7 @@
 
   <form id="signup" action="login_result.jsp">
     <fieldset>
-      <legend>회원가입 정보</legend>
+      <legend>로그인 정보</legend>
       <ul>
         <li>
           <label for="userid">아이디</label>
@@ -63,6 +61,7 @@
     <fieldset>
       <button type="submit"> 제출 </button> 
     </fieldset>
+
   </form>
 
   <footer>  <!-- 하단 메뉴 -->

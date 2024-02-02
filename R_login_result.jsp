@@ -1,28 +1,58 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE HTML>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<jsp:useBean id="Driver" class="source.Driver"/>
+<%@ page import="java.sql.*" %>
 <head>
-  <meta charset="EUC-KR">
-  <title>濡쒓렇?씤 寃곌낵</title>
-  <link rel="stylesheet" href="css/login.css">
+    <meta charset='EUC-KR'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>  
+    <title>로그인 결과</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  
-  <% 
-    // 濡쒓렇?씤 泥섎━瑜? ?쐞?븳 Java 肄붾뱶瑜? ?뿬湲곗뿉 ?옉?꽦?빀?땲?떎.
+  <form>
+<%
+    request.setCharacterEncoding("EUC-KR");
+
     String userid = request.getParameter("userid");
     String password = request.getParameter("password");
+    String errorMessage = "";
 
-    // ?뿬湲곗꽌?뒗 媛꾨떒?엳 鍮꾧탳瑜? ?븯吏?留?, ?떎?젣濡쒕뒗 ?뜲?씠?꽣踰좎씠?뒪?굹 ?떎瑜? ?씤利? ?떆?뒪?뀥怨쇱쓽 ?뿰?룞?씠 ?븘?슂?빀?땲?떎.
-    if ("?궗?슜?옄ID".equals(userid) && "鍮꾨??踰덊샇".equals(password)) {
-        // 濡쒓렇?씤 ?꽦怨? ?떆 硫붿씤 ?솕硫댁쑝濡? ?씠?룞?빀?땲?떎.
-        response.sendRedirect("Main.jsp"); // 硫붿씤 ?솕硫댁쓽 寃쎈줈瑜? ?닔?젙?빐二쇱꽭?슂.
-    } else {
-        // 濡쒓렇?씤 ?떎?뙣 ?떆 硫붿떆吏?瑜? ?몴?떆?빀?땲?떎.
-  %>
-      <h1>濡쒓렇?씤 ?떎?뙣</h1>
-      <p>?븘?씠?뵒 ?삉?뒗 鍮꾨??踰덊샇媛? ?삱諛붾Ⅴ吏? ?븡?뒿?땲?떎.</p>
-  <% } %>
+    try {
+        Connection conn = Driver.jdbc();
+        String sql = "SELECT * FROM loginData WHERE id=? AND pw=?";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, userid);
+        pstmt.setString(2, password);
+        ResultSet result = pstmt.executeQuery();
+
+        if (result.next()) {
+            // 로그인 성공
+            session.setAttribute("userid", userid);
+            response.sendRedirect("Main_login.jsp"); // 메인 페이지로 이동
+        } else {
+            // 로그인 실패
+            errorMessage = "아이디 또는 비밀번호가 올바르지 않습니다.";
+        }
+
+        pstmt.close();
+        conn.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+        errorMessage = "로그인 중 오류가 발생했습니다.";
+    }
+%>
+
+<% if (!errorMessage.isEmpty()) { %>
+    <h1>로그인 실패</h1>
+    <p><%= errorMessage %></p>
+    <button type="button" onclick="goToMain()">처음으로</button>
+<% } %>
+
+<script>
+    function goToMain() {
+        window.location.href = "Main.jsp";
+    }
+</script>
+  </form>
 </body>
-</html>
+</html> 
