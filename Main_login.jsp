@@ -66,7 +66,7 @@
 
     <div id="login">
         <li><%= userid %>님</li>   <!--새로 만들어서 구현해야함-->
-        <li><a href="login.jsp" target="_blank">회원가입</a></li>  <!--login.jsp 및 login.css-->
+        <li><a href="login.jsp" >회원가입</a></li>  <!--login.jsp 및 login.css-->
         <div id="search">
             <input type="text" placeholder="검색"> 
     </div>

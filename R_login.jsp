@@ -1,29 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>๋ก๊ทธ์ธ</title>
+    <meta charset='EUC-KR'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>ทฮฑืภฮ</title>
   <link rel="stylesheet" href="R_login.css">
 </head>
 <body>
   <form id="R_login" action="R_login_result.jsp" method="post">
     <fieldset>
-      <legend>๋ก๊ทธ์ธ</legend>
+      <legend>ทฮฑืภฮ</legend>
       <ul>
         <li>
-          <label for="userid">์•์ด๋””</label>
+          <label for="userid">พฦภฬต๐</label>
           <input id="userid" name="userid" type="text" required autofocus>
         </li>
         <li>
-          <label for="pwd">๋น๋ฐ€๋ฒํธ</label>
+          <label for="pwd">บ๑นะน๘ศฃ</label>
           <input id="pwd" name="password" type="password" required>
         </li>
       </ul>
     </fieldset>
     <fieldset>
-      <button type="submit">๋ก๊ทธ์ธ</button>
+      <button type="submit">ทฮฑืภฮ</button>
     </fieldset>
   </form>
 </body>

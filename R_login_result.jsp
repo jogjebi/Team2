@@ -1,20 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
-<html lang="ko">
+<!-- <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+    <meta charset='EUC-KR'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <jsp:useBean id="Driver" class="source.Driver"/>
 <%@ page import="java.sql.*" %>
 <head>
-  <meta charset="UTF-8">
-  <title>ë¡œê·¸ì¸ ê²°ê³¼</title>
+  <meta charset='EUC-KR'>
+  <title>·Î±×ÀÎ °á°ú</title>
   <link rel="stylesheet" href="login.css">
 </head>
-  <form>
 <body>
-  <% request.setCharacterEncoding("UTF-8"); %>
+  <form>
+
+  <% request.setCharacterEncoding("EUC-KR"); %>
 
   <% 
-    // ë¡œê·¸ì¸ ì²˜ë¦¬ë¥¼ ìœ„í•œ Java ì½”ë“œë¥¼ ì—¬ê¸°ì— ìž‘ì„±í•©ë‹ˆë‹¤.
+    // ·Î±×ÀÎ Ã³¸®¸¦ À§ÇÑ Java ÄÚµå¸¦ ¿©±â¿¡ ÀÛ¼ºÇÕ´Ï´Ù.
     String userid = request.getParameter("userid");
     session.setAttribute("userid", userid);
     String password = request.getParameter("password");
@@ -29,23 +30,85 @@
 
 
     while(result.next()){
-    // ì—¬ê¸°ì„œëŠ” ê°„ë‹¨ížˆ ë¹„êµë¥¼ í•˜ì§€ë§Œ, ì‹¤ì œë¡œëŠ” ë°ì´í„°ë² ì´ìŠ¤ë‚˜ ë‹¤ë¥¸ ì¸ì¦ ì‹œìŠ¤í…œê³¼ì˜ ì—°ë™ì´ í•„ìš”í•©ë‹ˆë‹¤.
-    if (result.getString("id").equals(userid) && result.getString("pw").equals(password)) {
-        // ë¡œê·¸ì¸ ì„±ê³µ ì‹œ ë©”ì¸ í™”ë©´ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.
-        %>
+    
+    if (result.getString("id").equals(userid) && result.getString("pw").equals(password)) {        %>
         <script>
-         alert("ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.");
+         alert("·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.");
         </script>
             <% 
             %>
         <%
-        response.sendRedirect("Main_login.jsp"); // ë©”ì¸ í™”ë©´ì˜ ê²½ë¡œë¥¼ ìˆ˜ì •í•´ì£¼ì„¸ìš”.
+        response.sendRedirect("Main_login.jsp"); // ¸ÞÀÎ È­¸éÀÇ °æ·Î¸¦ ¼öÁ¤ÇØÁÖ¼¼¿ä.
     } else {
     }
-        // ë¡œê·¸ì¸ ì‹¤íŒ¨ ì‹œ ë©”ì‹œì§€ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤.
+        // ·Î±×ÀÎ ½ÇÆÐ ½Ã ¸Þ½ÃÁö¸¦ Ç¥½ÃÇÕ´Ï´Ù.
   %>
-      <h1>ë¡œê·¸ì¸ ì‹¤íŒ¨</h1>
-      <p>ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.</p>
+      <h1>·Î±×ÀÎ ½ÇÆÐ</h1>
+      <p>¾ÆÀÌµð ¶Ç´Â ºñ¹Ð¹øÈ£°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.</p>
+      <button type="button" onclick="Main()">Ã³À½À¸·Î</button>
   <% } %>
+  <script>
+    function Main() {
+      window.location.href = "Main.jsp";
+    }</script>
+  </from>
 </body>
-</html>
+</html>  --> 
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<jsp:useBean id="Driver" class="source.Driver"/>
+<%@ page import="java.sql.*" %>
+<head>
+  <meta charset='EUC-KR'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>  
+  <title>·Î±×ÀÎ °á°ú</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <form>
+<%
+    request.setCharacterEncoding("EUC-KR");
+
+    String userid = request.getParameter("userid");
+    String password = request.getParameter("password");
+    String errorMessage = "";
+
+    try {
+        Connection conn = Driver.jdbc();
+        String sql = "SELECT * FROM loginData WHERE id=? AND pw=?";
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, userid);
+        pstmt.setString(2, password);
+        ResultSet result = pstmt.executeQuery();
+
+        if (result.next()) {
+            // ·Î±×ÀÎ ¼º°ø
+            session.setAttribute("userid", userid);
+            response.sendRedirect("Main_login.jsp"); // ¸ÞÀÎ ÆäÀÌÁö·Î ÀÌµ¿
+        } else {
+            // ·Î±×ÀÎ ½ÇÆÐ
+            errorMessage = "¾ÆÀÌµð ¶Ç´Â ºñ¹Ð¹øÈ£°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.";
+        }
+
+        pstmt.close();
+        conn.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+        errorMessage = "·Î±×ÀÎ Áß ¿À·ù°¡ ¹ß»ýÇß½À´Ï´Ù.";
+    }
+%>
+
+<% if (!errorMessage.isEmpty()) { %>
+    <h1>·Î±×ÀÎ ½ÇÆÐ</h1>
+    <p><%= errorMessage %></p>
+    <button type="button" onclick="goToMain()">Ã³À½À¸·Î</button>
+<% } %>
+
+<script>
+    function goToMain() {
+        window.location.href = "Main.jsp";
+    }
+</script>
+  </form>
+</body>
+</html> 

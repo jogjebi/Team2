@@ -1,27 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>М ▄Л⌡░ Й╟─Л·┘ Л└╠ЙЁ╣</title>
+    <meta charset='EUC-KR'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>х╦©Ь ╟║ют ╪╨╟Ь</title>
   <link rel="stylesheet" href="login_result.css">
 </head>
 <body>
   <form id="success">
     
-  <h1>М ▄Л⌡░Й╟─Л·┘ Л└╠ЙЁ╣!</h1>
-  <p>М ▄Л⌡░Й╟─Л·┘Л≈░ Л└╠ЙЁ╣М∙≤Л┘╗Л┼╣К▀┬К▀╓.</p>
+  <h1>х╦©Ь╟║ют ╪╨╟Ь!</h1>
+  <p>х╦©Ь╟║ют©║ ╪╨╟Ьго╪л╫ю╢о╢ы.</p>
   <fieldset>
   <div>
-    <h2>М ▄Л⌡░ Л═∙КЁ╢</h2>
+    <h2>х╦©Ь а╓╨╦</h2>
     <ul>
-      <li><strong>Л∙└Л²╢К■■:</strong> <%= request.getParameter("userid") %></li>
-      <li><strong>К╧└К╟─К╡┬М≤╦:</strong> <%= request.getParameter("pwd1") %></li>
-      <li><strong>М ▄Л⌡░ К⌠╠Й╦┴:</strong> <%= request.getParameter("level") %></li>
+      <li><strong>╬фюл╣П:</strong> <%= request.getParameter("userid") %></li>
+      <li><strong>╨Я╧п╧Ьхё:</strong> <%= request.getParameter("pwd1") %></li>
+      <li><strong>х╦©Ь ╣Н╠ч:</strong> <%= request.getParameter("level") %></li>
     </ul>
   </div>
-  <button type="button" onclick="Main()">Л╡≤Л²▄Л°╪К║°</button>
+  <button type="button" onclick="Main()">цЁю╫ю╦╥н</button>
 </fieldset>
 </form>
 
